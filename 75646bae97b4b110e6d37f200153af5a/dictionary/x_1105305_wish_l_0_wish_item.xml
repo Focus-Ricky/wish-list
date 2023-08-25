@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ef946fae97b4b110e6d37f200153af1e" label="Wish Item" max_length="40" name="x_1105305_wish_l_0_wish_item" type="collection">
+        <element display="true" label="Item" mandatory="true" max_length="100" name="item" type="string"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element label="Requester" mandatory="true" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element label="URL" max_length="40" name="url" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Display name" max_length="300" name="u_string_1" read_only="true" type="string"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+    </element>
+</database>
